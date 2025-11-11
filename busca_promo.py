@@ -52,6 +52,16 @@ app = FastAPI(
     description="Uma API que expõe mensagens de canais do Telegram em tempo real.",
 )
 
+# Esta secção permite que qualquer website (origem) aceda à sua API.
+app.add_middleware(
+    CORSMiddleware, # type: ignore
+    allow_origins=["*"],  # Permite todas as origens
+    allow_credentials=True,
+    allow_methods=["*"],  # Permite todos os métodos (GET, POST, etc.)
+    allow_headers=["*"],  # Permite todos os cabeçalhos
+)
+# ----------------------------------------
+
 @app.get("/", summary="Endpoint raiz")
 def get_root():
     """Endpoint raiz para verificar se a API está online."""
