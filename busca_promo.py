@@ -32,7 +32,8 @@ CANAL_ORIGEM = [
     "https://t.me/urubupromo",
     "https://t.me/pechinchou",
     "https://t.me/grupotempromo",
-    "https://t.me/peguepromo"
+    "https://t.me/peguepromo",
+    "https://t.me/+FrQHi-rbxbg4NDcx"
 ]
 
 # 3. Não precisamos mais de SESSION_NAME
