@@ -12,6 +12,7 @@ from fastapi import FastAPI
 # --- Importações do Telegram ---
 from telethon import TelegramClient, events # type: ignore
 from telethon.sessions import StringSession # Importado para usar a sessão
+from fastapi.middleware.cors import CORSMiddleware  # <-- 1. IMPORTAR O MIDDLEWARE
 
 # --- Configuração ---
 # 1. As credenciais agora vêm das "Variáveis de Ambiente" do servidor
