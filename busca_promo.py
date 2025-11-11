@@ -1,3 +1,14 @@
+import logging
+import datetime
+import threading
+import asyncio
+import os  # <-- A CORREÇÃO ESTÁ AQUI
+from collections import deque
+
+# --- Importações de API ---
+import uvicorn
+from fastapi import FastAPI
+
 # --- Importações do Telegram ---
 from telethon import TelegramClient, events # type: ignore
 from telethon.sessions import StringSession # Importado para usar a sessão
