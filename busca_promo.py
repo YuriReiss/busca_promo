@@ -36,7 +36,7 @@ API_ID = int(API_ID_STR)
 # 2. Lista de canais
 CANAL_ORIGEM = [
     "https://t.me/urubupromo",
-    "https://t.me/pechinchou"
+    "https://t.me/xetdaspromocoes"
 ]
 
 # 4. Armazenamento em memória
@@ -180,3 +180,4 @@ if __name__ == "__main__":
     with client:
 
         client.loop.run_until_complete(main())
+
